@@ -5,11 +5,13 @@
 
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 
-  <meta
+  <!-- <meta
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
     name="viewport"
-  />
+  /> -->
 
+  <meta name="viewport" content="width=400; user-scalable=0;" />
+  
   <title>| Ved Bulsara | 🕵️‍♂️ |</title>
 
   <meta property="og:title" content="| Ved Bulsara | 🕵️‍♂️ |" />
@@ -28,7 +30,7 @@
 
   <meta
     name="description"
-    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content="Ved Bulsara's personal portfolio website"
   />
 
   <link rel="icon" type="image/png" href="/assets/img/favicon.ico" />
@@ -89,6 +91,7 @@
     x-data="{ mobileMenu: false }"
   >
     
+
     <div id="main" class="relative">
       <div
   x-data="{
@@ -137,13 +140,13 @@
             class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
           ></span>
         </li>
-        
+
         <li class="group pl-6">
           
           <span
-            @click="triggerNavItem('#portfolio')"
+            @click="triggerNavItem('#odyssey')"
             class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Portfolio</span
+            >Professional Odyssey</span
           >
           
           <span
@@ -154,9 +157,9 @@
         <li class="group pl-6">
           
           <span
-            @click="triggerNavItem('#clients')"
+            @click="triggerNavItem('#certifications')"
             class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Clients</span
+            >Certifications</span
           >
           
           <span
@@ -167,35 +170,9 @@
         <li class="group pl-6">
           
           <span
-            @click="triggerNavItem('#work')"
+            @click="triggerNavItem('#posts')"
             class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Work</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#statistics')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Statistics</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#blog')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Blog</span
+            >LinkedIn Posts</span
           >
           
           <span
@@ -261,13 +238,23 @@
         >
         
       </li>
-      
+
+       <li class="py-2">
+          
+        <span
+          @click="triggerMobileNavItem('#odyssey')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Professional Odyssey</span
+        >
+
+      </li>
+
       <li class="py-2">
         
         <span
-          @click="triggerMobileNavItem('#portfolio')"
+          @click="triggerMobileNavItem('#certifications')"
           class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Portfolio</span
+          >Certifications</span
         >
         
       </li>
@@ -275,39 +262,9 @@
       <li class="py-2">
         
         <span
-          @click="triggerMobileNavItem('#clients')"
+          @click="triggerMobileNavItem('#posts')"
           class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Clients</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#work')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Work</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#statistics')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Statistics</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#blog')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Blog</span
+          >LinkedIn Posts</span
         >
         
       </li>
@@ -367,7 +324,7 @@
 
             <a href="https://www.linkedin.com/in/vedbulsara04/" class="pl-4" target="_blank">
               <i
-                class="bx bxl-linkedin text-2xl text-white hover:text-yellow"
+                class="bx bxl-linkedin-square text-2xl text-white hover:text-yellow"
               ></i>
             </a>
             <a href="https://github.com/vedbulsara04/" class="pl-4" target="_blank">
@@ -427,12 +384,12 @@
         <div
           class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
 
-          <a href="https://www.linkedin.com/in/vedbulsara04/" class="pl-4">
+          <a href="https://www.linkedin.com/in/vedbulsara04/" class="pl-4" target="_blank">
             <i
-              class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"
+              class="bx bxl-linkedin-square text-2xl text-primary hover:text-yellow"
             ></i>
           </a>
-          <a href="https://github.com/vedbulsara04/" class="pl-4">
+          <a href="https://github.com/vedbulsara04/" class="pl-4" target="_blank">
             <i
               class="bx bxl-github text-2xl text-primary hover:text-yellow"
             ></i>
@@ -482,10 +439,10 @@
       <div class="pt-6">
         <div class="flex items-end justify-between">
           <h4 class="font-body font-semibold uppercase text-black">Cloud Computing</h4>
-          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+          <h3 class="font-body text-3xl font-bold text-primary">90%</h3>
         </div>
         <div class="mt-2 h-3 w-full rounded-full bg-lila">
-          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+          <div class="h-3 rounded-full bg-primary" style="width: 90%"></div>
         </div>
       </div>
       <div class="pt-6">
@@ -691,126 +648,16 @@
   </div>
 </div>
 
-<div class="container py-16 md:py-20" id="portfolio">
+<div class="container py-16 md:py-20" id="odyssey">
   <h2
     class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
   >
-    Check out my Portfolio
+    Professional Odyssey
   </h2>
   <h3
     class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
   >
-    Here's what I have done with the past
-  </h3>
-
-  <div
-    class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2"
-  >
-    <a
-      href="/"
-      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-    >
-      <img
-        src="/assets/img/portfolio-apple.jpeg"
-        class="w-full shadow"
-        alt="portfolio image"
-      />
-    </a>
-    <a
-      href="/"
-      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-    >
-      <img
-        src="/assets/img/portfolio-stripe.jpeg"
-        class="w-full shadow"
-        alt="portfolio image"
-      />
-    </a>
-    <a
-      href="/"
-      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-    >
-      <img
-        src="/assets/img/portfolio-fedex.jpeg"
-        class="w-full shadow"
-        alt="portfolio image"
-      />
-    </a>
-    <a
-      href="/"
-      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-    >
-      <img
-        src="/assets/img/portfolio-microsoft.jpeg"
-        class="w-full shadow"
-        alt="portfolio image"
-      />
-    </a>
-  </div>
-</div>
-
-<div class="bg-grey-50" id="clients">
-  <div class="container py-16 md:py-20">
-    <div class="mx-auto w-full sm:w-3/4 lg:w-full">
-      <h2
-        class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-      >
-        My latest clients
-      </h2>
-      <div class="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
-        <span class="m-8 block">
-          <img
-            src="/assets/img/logo-coca-cola.svg"
-            alt="client logo"
-            class="mx-auto block h-12 w-auto"
-          />
-        </span>
-        <span class="m-8 block">
-          <img
-            src="/assets/img/logo-apple.svg"
-            alt="client logo"
-            class="mx-auto block h-12 w-auto"
-          />
-        </span>
-
-        <span class="m-8 block">
-          <img
-            src="/assets/img/logo-netflix.svg"
-            alt="client logo"
-            class="mx-auto block h-12 w-auto"
-          />
-        </span>
-
-        <span class="m-8 block">
-          <img
-            src="/assets/img/logo-amazon.svg"
-            alt="client logo"
-            class="mx-auto block h-12 w-auto"
-          />
-        </span>
-
-        <span class="m-8 block">
-          <img
-            src="/assets/img/logo-stripe.svg"
-            alt="client logo"
-            class="mx-auto block h-12 w-auto"
-          />
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container py-16 md:py-20" id="work">
-  <h2
-    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-  >
-    My work experience
-  </h2>
-  <h3
-    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-  >
-    Here's what I did before freelancing
+    A n adventurous journey with various experiences & challenges.
   </h3>
 
   <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
@@ -823,9 +670,10 @@
         <div class="flex justify-center md:justify-start">
           <span class="shrink-0">
             <img
-              src="/assets/img/logo-spotify.svg"
+              src="/assets/img/bgd.jpg"
               class="h-auto w-32"
-              alt="company logo"
+              alt="BlackStone Game Development"
+              width="200px"
             />
           </span>
           <div class="relative ml-3 hidden w-full md:block">
@@ -845,17 +693,17 @@
             <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
             <div class="md:-mt-1 md:pl-8">
               <span class="block font-body font-bold text-grey-40"
-                >Apr 2015 - Mar 2018</span
+                >July 2022 -- August 2022</span
               >
               <span
                 class="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                >Frontend Developer</span
+                >Web Developer</span
               >
               <div class="pt-2">
                 <span class="block font-body text-black"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
-                  venenatis enim.</span
+                  >Worked as an Intern in the domain of Web Development
+                  at Blackstone game development company. <br> <br>
+                  HTML, CSS, Bootstrap, JavaScript, <br>PHP, MySQL, Git & Github.</span
                 >
               </div>
             </div>
@@ -863,14 +711,15 @@
         </div>
       </div>
     </div>
+
     <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
       <div class="md:w-2/5">
         <div class="flex justify-center md:justify-start">
           <span class="shrink-0">
             <img
-              src="/assets/img/logo-microsoft.svg"
+              src="/assets/img/acmegrade.jpeg"
               class="h-auto w-32"
-              alt="company logo"
+              alt="acmegrade"
             />
           </span>
           <div class="relative ml-3 hidden w-full md:block">
@@ -890,17 +739,17 @@
             <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
             <div class="md:-mt-1 md:pl-8">
               <span class="block font-body font-bold text-grey-40"
-                >Mar 2018 - September 2019</span
+                >December 2023 -- Present</span
               >
               <span
                 class="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                >Software Engineer</span
+                >Cloud Computing Training & Internship</span
               >
               <div class="pt-2">
                 <span class="block font-body text-black"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
-                  venenatis enim.</span
+                  >Upgrading my skills & knowledge base in Cloud Computing
+                  with their Training & Internship program.<br><br>
+                  Microsoft Azure Cloud & Amazon Web Services(AWS) Cloud Service providers.</span
                 >
               </div>
             </div>
@@ -908,174 +757,34 @@
         </div>
       </div>
     </div>
-    <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
-      <div class="md:w-2/5">
-        <div class="flex justify-center md:justify-start">
-          <span class="shrink-0">
-            <img
-              src="/assets/img/logo-fedex.svg"
-              class="h-auto w-32"
-              alt="company logo"
-            />
-          </span>
-          <div class="relative ml-3 hidden w-full md:block">
-            <span
-              class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
-            ></span>
-          </div>
-        </div>
-      </div>
-      <div class="md:w-3/5">
-        <div class="relative flex md:pl-18">
-          <span
-            class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
-          ></span>
 
-          <div class="mt-1 flex">
-            <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
-            <div class="md:-mt-1 md:pl-8">
-              <span class="block font-body font-bold text-grey-40"
-                >October 2019 - Feb 2021</span
-              >
-              <span
-                class="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                >DevOps Engineer</span
-              >
-              <div class="pt-2">
-                <span class="block font-body text-black"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
-                  venenatis enim.</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
-<div
-  class="bg-cover bg-top bg-no-repeat pb-16 md:py-16 lg:py-24"
-  style="background-image: url(/assets/img/experience-figure.png)"
-  id="statistics"
->
-  <div class="container">
-    <div
-      class="mx-auto w-5/6 bg-white py-16 shadow md:w-11/12 lg:py-20 xl:py-24 2xl:w-full"
-    >
-      <div class="grid grid-cols-2 gap-5 md:gap-8 xl:grid-cols-4 xl:gap-5">
-        <div
-          class="flex flex-col items-center justify-center text-center md:flex-row md:text-left"
-        >
-          <div>
-            <img
-              src="/assets/img/icon-project.svg"
-              class="mx-auto h-12 w-auto md:h-20"
-              alt="icon project"
-            />
-          </div>
-          <div class="pt-5 md:pl-5 md:pt-0">
-            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
-              12
-            </h1>
-            <h4
-              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-            >
-              Finished Projects
-            </h4>
-          </div>
-        </div>
 
-        <div
-          class="flex flex-col items-center justify-center text-center md:flex-row md:text-left"
-        >
-          <div>
-            <img
-              src="/assets/img/icon-award.svg"
-              class="mx-auto h-12 w-auto md:h-20"
-              alt="icon award"
-            />
-          </div>
-          <div class="pt-5 md:pl-5 md:pt-0">
-            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
-              3
-            </h1>
-            <h4
-              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-            >
-              Awards Won
-            </h4>
-          </div>
-        </div>
 
-        <div
-          class="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0"
-        >
-          <div>
-            <img
-              src="/assets/img/icon-happy.svg"
-              class="mx-auto h-12 w-auto md:h-20"
-              alt="icon happy clients"
-            />
-          </div>
-          <div class="pt-5 md:pl-5 md:pt-0">
-            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
-              8
-            </h1>
-            <h4
-              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-            >
-              Happy Clients
-            </h4>
-          </div>
-        </div>
-
-        <div
-          class="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0"
-        >
-          <div>
-            <img
-              src="/assets/img/icon-puzzle.svg"
-              class="mx-auto h-12 w-auto md:h-20"
-              alt="icon puzzle"
-            />
-          </div>
-          <div class="pt-5 md:pl-5 md:pt-0">
-            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
-              99
-            </h1>
-            <h4
-              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-            >
-              Bugs Fixed
-            </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-grey-50" id="blog">
+<div class="bg-grey-50" id="certifications">
   <div class="container py-16 md:py-20">
     <h2
       class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
     >
-      I also like to write
+    Résumé & Certifications
     </h2>
     <h4
       class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
     >
-      Check out my latest posts!
+      Unlock my professional story.....
     </h4>
+
     <div
       class="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10"
     >
-      <a href="/post" class="shadow">
+
+    
+    <!------------------------------- Download Resume ---------------------------------------------------------->
+      <a href="https://drive.google.com/drive/folders/18dTp6TUV3QwcDqCAwjOslQELUJ5AMVD9?usp=sharing" class="shadow" target="_blank">
         <div
-          style="background-image: url(/assets/img/post-01.png)"
+          style="background-image: url(/assets/img/ved2.jpg)"
           class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
         >
           <span
@@ -1083,22 +792,29 @@
           ></span>
           <span
             class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
-            >Read More</span
+            >Download Résumé</span
           >
         </div>
         <div class="bg-white py-6 px-5 xl:py-8">
           <span class="block font-body text-lg font-semibold text-black"
-            >How to become a frontend developer</span
+            ><u>Download my Résumé</u></span
           >
           <span class="block pt-2 font-body text-grey-20"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
-          >
+            >| A Linux Aficionado | Postman Student Expert | Cloud engineering enthusiast - AWS & GCP
+            | | Computer Engg. student at K.J Somaiya Institute of Technology | <br><br> 
+            Talks about #linux, #devops, #networking, #cybersecurity, and #cloudcomputing
+            <br><br>
+            Connect with me on LinkedIn!</span
+          > <br> <br>
         </div>
       </a>
-      <a href="/post" class="shadow">
+      <!------------------------------- Download Resume ---------------------------------------------------------->
+
+
+      <!------------------------------- Certifications ---------------------------------------------------------->
+      <a href="https://drive.google.com/drive/folders/10O9SWKWXwNqYZzyulzr-wxRi3XQuyHpw?usp=sharing" class="shadow" target="_blank">
         <div
-          style="background-image: url(/assets/img/post-02.png)"
+          style="background-image: url(/assets/img/cert.jpg)"
           class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
         >
           <span
@@ -1106,22 +822,32 @@
           ></span>
           <span
             class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
-            >Read More</span
+            >View certificates</span
           >
         </div>
         <div class="bg-white py-6 px-5 xl:py-8">
           <span class="block font-body text-lg font-semibold text-black"
-            >My personal productivity system</span
+            ><u>View my Certifications</u></span
           >
           <span class="block pt-2 font-body text-grey-20"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+            >
+            Certifications achieved from: <br> <br>
+            - Google Developer Student Clubs - KJSIT <br>
+            - Coursera <br>
+            - InternShala Trainings <br>
+            - Udemy <br>
+            - Scaler Bootcamps <br>
+            - Simplilearn <br> <br> <br> <br>
+            </span
           >
         </div>
       </a>
-      <a href="/post" class="shadow">
+      <!------------------------------- Certifications ---------------------------------------------------------->
+
+      <!------------------------------- Achievements ---------------------------------------------------------->
+      <a href="https://www.linkedin.com/in/vedbulsara04/details/certifications/" class="shadow" target="_blank">
         <div
-          style="background-image: url(/assets/img/post-03.png)"
+          style="background-image: url(/assets/img/achievements.jpg)"
           class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
         >
           <span
@@ -1129,83 +855,165 @@
           ></span>
           <span
             class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
-            >Read More</span
+            >view achievements</span
           >
         </div>
         <div class="bg-white py-6 px-5 xl:py-8">
           <span class="block font-body text-lg font-semibold text-black"
-            >My year in review 2020</span
+            ><u>View my Achievements</u></span
           >
           <span class="block pt-2 font-body text-grey-20"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+            >Note: you need to be logged in on LinkedIn to view my achievements: 
+              <br><br>
+            - Google Developer Student Clubs - KJSIT<br>
+            - Google Cloud Study Jams <br>
+            - Google Cloud Skills Boost <br>
+            - Postman API Platform <br>
+            - TryHackMe <br>
+            - AWS Skill builder <br>
+            - Microsoft Learn <br>
+            <br>
+            
+            </span
           >
         </div>
       </a>
+      <!------------------------------- Achievements ---------------------------------------------------------->
     </div>
   </div>
 </div>
+
+
+
+<div class="bg-grey-50" id="posts">
+  <div class="container py-16 md:py-20">
+    <h2
+      class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+    >
+      My LinkedIn posts
+    </h2>
+    <h4
+      class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+    >
+      check out my latest updates & informative posts
+    </h4>
+
+    <div
+      class="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10"
+    >
+
+    <!------------------------------- POST 1 ---------------------------------------------------------->
+      <a href="https://www.linkedin.com/posts/vedbulsara04_cloud-cloudcomputing-cloudjourney-activity-7143932573197529088-d63Q?utm_source=share&utm_medium=member_desktop" class="shadow" target="_blank">
+        <div
+          style="background-image: url(/assets/img/3.png)"
+          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
+        >
+          <span
+            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
+          ></span>
+          <span
+            class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
+            >Read More</span
+          >
+        </div>
+        <div class="bg-white py-6 px-5 xl:py-8">
+          <span class="block font-body text-lg font-semibold text-black"
+            >POST 2: Cloud Harmony: Unveiling Cloud Principles for Seamless Computing 🧑‍💻⚖️</span
+          >
+          <span class="block pt-2 font-body text-grey-20"
+            >Hey LinkedIn community! 👋 Excited to break down the NIST's 
+            [5-4-3] principles for cloud computing in my latest 
+            "Cloud Computing in a Nutshell" post. 🌐 Let's dive in!
+            Stay tuned for more such informative posts!
+            Follow Ved Bulsara for more such content.</span
+          >
+        </div>
+      </a>
+      <!------------------------------- POST 1 ---------------------------------------------------------->
+
+
+      <!------------------------------- POST 2 ---------------------------------------------------------->
+      <a href="https://www.linkedin.com/posts/vedbulsara04_cloud-cloudcomputing-cloudjourney-activity-7142595814006177792-sjJ0?utm_source=share&utm_medium=member_desktop" class="shadow" target="_blank">
+        <div
+          style="background-image: url(/assets/img/2.jpg)"
+          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
+        >
+          <span
+            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
+          ></span>
+          <span
+            class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
+            >Read More</span
+          >
+        </div>
+        <div class="bg-white py-6 px-5 xl:py-8">
+          <span class="block font-body text-lg font-semibold text-black"
+            >POST 1: Embracing the Cloud ☁️ Unleashing the Power of Cloud Computing!</span
+          >
+          <span class="block pt-2 font-body text-grey-20"
+            >Hey LinkedIn fam! 👋 Excited to dive into the transformative world of Cloud Computing with you today. 
+            🌐✨This is my 1st post of the Cloud Computing in a Nutshell series!
+            Stay tuned for more such informative posts! <br>
+            Follow Ved Bulsara for more such content.</span
+          >
+        </div>
+      </a>
+      <!------------------------------- POST 2 ---------------------------------------------------------->
+
+
+      <!------------------------------- POST 3 ---------------------------------------------------------->
+      <a href="https://www.linkedin.com/posts/vedbulsara04_cloud-cloudcomputing-cloudjourney-activity-7141702898253561856-lR6n?utm_source=share&utm_medium=member_desktop" class="shadow" target="_blank">
+        <div
+          style="background-image: url(/assets/img/1.jpg)"
+          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
+        >
+          <span
+            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
+          ></span>
+          <span
+            class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
+            >Read More</span
+          >
+        </div>
+        <div class="bg-white py-6 px-5 xl:py-8">
+          <span class="block font-body text-lg font-semibold text-black"
+            >Hello LinkedIn community! 😎</span
+          >
+          <span class="block pt-2 font-body text-grey-20"
+            >I am thrilled to share some exciting news <br> with you.
+            Today marks the beginning of a new series of informative posts 
+            that will demystify the world of Cloud Computing. 
+            🚀 Over the coming weeks, we'll explore the ins & outs of this 
+            transformative technology, breaking down complex concepts into 
+            digestible insights for everyone.</span
+          >
+        </div>
+      </a>
+      <!------------------------------- POST 3 ---------------------------------------------------------->
+
+    </div>
+  </div>
+</div>
+
 
 <div class="container py-16 md:py-20" id="contact">
   <h2
     class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
   >
-    Here's a contact form
+    Get in touch with me!
   </h2>
-  <h4
-    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-  >
-    Have Any Questions?
-  </h4>
-  <div class="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
-    <p class="font-body text-grey-10">
-      Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit
-      condimentum turpis nisl sem, viverra habitasse urna ante lobortis
-      fermentum accumsan. Viverra habitasse urna ante lobortis fermentum
-      accumsan.
-    </p>
-  </div>
-  <form class="mx-auto w-full pt-10 sm:w-3/4">
-    <div class="flex flex-col md:flex-row">
-      <input
-        class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:w-1/2 lg:mr-5"
-        placeholder="Name"
-        type="text"
-        id="name"
-      />
-      <input
-        class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5"
-        placeholder="Email"
-        type="text"
-        id="email"
-      />
-    </div>
-    <textarea
-      class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-8"
-      placeholder="Message"
-      id="message"
-      cols="30"
-      rows="10"
-    ></textarea>
-    <button
-      class="mt-6 flex items-center justify-center rounded bg-primary px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20"
-    >
-      Send
-      <i class="bx bx-chevron-right relative -right-2 text-3xl"></i>
-    </button>
-  </form>
   <div class="flex flex-col pt-16 lg:flex-row">
     <div
       class="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3"
     >
       <div class="flex items-center">
-        <i class="bx bx-phone text-2xl text-grey-40"></i>
+        <i class="bx bxl-linkedin-square text-2xl text-grey-40"></i>
         <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
-          My Phone
+          LinkedIn
         </p>
       </div>
       <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
-        (+881) 111 222 333
+        <a href="https://www.linkedin.com/in/vedbulsara04/">vedbulsara04</a>
       </p>
     </div>
     <div
@@ -1214,11 +1022,11 @@
       <div class="flex items-center">
         <i class="bx bx-envelope text-2xl text-grey-40"></i>
         <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
-          My Email
+          E-mail
         </p>
       </div>
       <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
-        name@mydomain.com
+        vedbulsara7@gmail.com
       </p>
     </div>
     <div
@@ -1227,11 +1035,11 @@
       <div class="flex items-center">
         <i class="bx bx-map text-2xl text-grey-40"></i>
         <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
-          My Address
+          City where I live
         </p>
       </div>
       <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
-        123 New York D Block 1100, 2011 USA
+        Mumbai, Maharashtra, India <br>(The City of Dreams)
       </p>
     </div>
   </div>
@@ -1239,60 +1047,30 @@
 
 <div
   class="h-72 bg-cover bg-center bg-no-repeat sm:h-64 md:h-72 lg:h-96"
-  style="background-image: url(/assets/img/map.png)"
+  style="background-image: url(/assets/img/mumbai.png)"
 ></div>
 
-<div
-  class="relative bg-primary bg-cover bg-center bg-no-repeat py-16 bg-blend-multiply lg:py-24"
-  style="background-image: url(/assets/img/bg-cta.jpg)"
->
-  <div class="container relative z-30">
-    <h3
-      class="text-center font-header text-3xl uppercase leading-tight tracking-wide text-white sm:text-4xl lg:text-5xl"
-    >
-      Keep <span class="font-bold">up-to-date</span> <br />
-      with what I'm up to
-    </h3>
-    <form class="mt-6 flex flex-col justify-center sm:flex-row">
-      <input
-        class="w-full rounded px-4 py-3 font-body text-black sm:w-2/5 sm:py-4 lg:w-1/3"
-        type="text"
-        id="email"
-        placeholder="Give me your Email"
-      />
-      <button
-        class="mt-2 rounded bg-yellow px-8 py-3 font-body text-base font-bold uppercase text-primary transition-colors hover:bg-primary hover:text-white focus:border-transparent focus:outline-none focus:ring focus:ring-yellow sm:ml-2 sm:mt-0 sm:py-4 md:text-lg"
-      >
-        Join the club
-      </button>
-    </form>
-  </div>
-</div>
+
 </div>
 
       <div class="bg-primary">
   <div class="container flex flex-col justify-between py-6 sm:flex-row">
     <p class="text-center font-body text-white md:text-left">
-      © Copyright 2022. All right reserved, ATOM.
+      Made with 💖 by Ved Bulsara.
     </p>
     <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-      <a href="/">
+      <a href="https://github.com/vedbulsara04/" target="_blank">
         <i
-          class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
+          class="bx bxl-github text-2xl text-white hover:text-yellow"
         ></i>
       </a>
-      <a href="/" class="pl-4">
-        <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
+      <a href="https://www.linkedin.com/in/vedbulsara04/" class="pl-4" target="_blank">
+        <i class="bx bxl-linkedin-square text-2xl text-white hover:text-yellow"></i>
       </a>
-      <a href="/" class="pl-4">
-        <i class="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
+      <a href="mailto:vedbulsara7@gmail.com" class="pl-4" target="_blank">
+        <img src="assets/img/email.png" alt="email" width="25px">
       </a>
-      <a href="/" class="pl-4">
-        <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
-      </a>
-      <a href="/" class="pl-4">
-        <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-      </a>
+
     </div>
   </div>
 </div>
@@ -1303,4 +1081,5 @@
 
     
   </body>
+
 </html>
