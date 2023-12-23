@@ -3,8 +3,3 @@
 
 > - Website hosted on Netlify :
     https://vedbulsara.netlify.app/
-
-
-> - Website hosted on Github page :
-    https://vedbulsara04.github.io/vedbulsara/
-    
